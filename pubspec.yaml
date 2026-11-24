@@ -1,0 +1,54 @@
+name: test_developer
+description: "Simple e-learning app for students: browse courses, watch video lessons."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Material Design widgets live in their own package since Flutter 3.47
+  # (package:flutter/material.dart is deprecated).
+  material_ui: ^1.4.0
+
+  # State management + DI: providers wire datasource -> repository -> UI,
+  # and AsyncValue gives loading/error/data states for free.
+  flutter_riverpod: ^3.5.0
+  # Declarative routing with path params (/courses/:id) and named routes.
+  go_router: ^18.1.4
+  # HTTP client: central timeouts, structured DioException handling.
+  dio: ^5.11.1
+  # Official video player: ExoPlayer/AVPlayer with HTTP range streaming.
+  video_player: ^2.14.1
+  # Thumbnail disk cache plus placeholder/error widgets.
+  cached_network_image: ^4.0.7
+  # One consistent icon set (uniform 2px stroke, not stock Material glyphs).
+  # lucide_icons_flutter instead of lucide_icons: the old package subclasses
+  # IconData, which is a final class since Flutter 3.47 and no longer
+  # extendable outside its library.
+  lucide_icons_flutter: ^4.0.3
+  # Plus Jakarta Sans without shipping large font asset files.
+  google_fonts: ^9.0.0
+  youtube_player_iframe: ^6.0.4
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Lint rules, enabled in analysis_options.yaml.
+  flutter_lints: ^6.0.0
+  # Repository fakes for unit tests, no code generation.
+  mocktail: ^1.0.5
+  # Swaps network images for placeholders inside widget tests.
+  network_image_mock: ^2.1.1
+  # Platform interface of video_player: widget tests install a fake
+  # implementation instead of a real codec.
+  video_player_platform_interface: ^6.9.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Mock API responses (see AppConfig.useMock).
+    - assets/mock/api/

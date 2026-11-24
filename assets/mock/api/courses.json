@@ -1,0 +1,374 @@
+{
+  "success": true,
+  "meta": {
+    "total": 5
+  },
+  "data": [
+    {
+      "id": "c-flutter-pemula",
+      "title": "Flutter untuk Pemula: Dari Install Sampai Terbit di Play Store",
+      "description": "Kumpulan tutorial publik dari pembuat yang dicantumkan pada setiap pelajaran. Materi mengikuti video sumber; versi SDK dan tampilan alat dapat berbeda dari versi terbaru.",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=450&fit=crop&q=80",
+      "instructor": "Kurasi tutorial publik",
+      "level": "pemula",
+      "totalLessons": 8,
+      "totalDurationSeconds": 8818,
+      "lessons": [
+        {
+          "id": "l-fp-01",
+          "courseId": "c-flutter-pemula",
+          "title": "Memasang Flutter di VS Code",
+          "order": 1,
+          "durationSeconds": 575,
+          "videoUrl": "https://www.youtube.com/watch?v=3IzMppLBPGo",
+          "description": "Tutorial: #2.1 Belajar Flutter - Instal Flutter dengan Visual Studio Code - VS Code\nPembuat: sekolahkampus TV Programming & Tutorial · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-02",
+          "courseId": "c-flutter-pemula",
+          "title": "Membuat Aplikasi Flutter Pertama",
+          "order": 2,
+          "durationSeconds": 601,
+          "videoUrl": "https://www.youtube.com/watch?v=ZcL-h8Hcmb0",
+          "description": "Tutorial: #2.2 Belajar Flutter - Membuat Aplikasi Pertama dengan Flutter (Helloworld)\nPembuat: sekolahkampus TV Programming & Tutorial · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-03",
+          "courseId": "c-flutter-pemula",
+          "title": "Layout dengan Row dan Column",
+          "order": 3,
+          "durationSeconds": 795,
+          "videoUrl": "https://www.youtube.com/watch?v=LvJS-hl8Jps",
+          "description": "Tutorial: #5 Tutorial Flutter - Widget Row dan Column\nPembuat: Bossdev · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-04",
+          "courseId": "c-flutter-pemula",
+          "title": "Mengisi Ruang dengan Expanded",
+          "order": 4,
+          "durationSeconds": 585,
+          "videoUrl": "https://www.youtube.com/watch?v=GzVCbg6lJ5A",
+          "description": "Tutorial: Mengisi bagian kosong dengan Expanded | Belajar Flutter\nPembuat: AudaCoding · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-05",
+          "courseId": "c-flutter-pemula",
+          "title": "Navigasi Antar Halaman",
+          "order": 5,
+          "durationSeconds": 4669,
+          "videoUrl": "https://www.youtube.com/watch?v=5Tnr-m20O7s",
+          "description": "Tutorial: Dicoding Developer Coaching #44: Flutter | Navigasi Antar Halaman pada Flutter\nPembuat: Dicoding Indonesia · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-06",
+          "courseId": "c-flutter-pemula",
+          "title": "Input Pengguna dengan TextField",
+          "order": 6,
+          "durationSeconds": 671,
+          "videoUrl": "https://www.youtube.com/watch?v=14ExNF-OnDU",
+          "description": "Tutorial: FLUTTER 18 Penggunaan TextField (Tutorial Flutter Bahasa Indonesia)\nPembuat: Kuldii Project · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-07",
+          "courseId": "c-flutter-pemula",
+          "title": "Penyimpanan Lokal dengan Shared Preferences",
+          "order": 7,
+          "durationSeconds": 617,
+          "videoUrl": "https://www.youtube.com/watch?v=lmrmJ0Fs8j0",
+          "description": "Tutorial: Flutter Menyimpan Data di Local Device -  Shared Preferences\nPembuat: devindo · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-fp-08",
+          "courseId": "c-flutter-pemula",
+          "title": "Mengunggah App Bundle Flutter ke Play Store — Bagian 1",
+          "order": 8,
+          "durationSeconds": 305,
+          "videoUrl": "https://www.youtube.com/watch?v=_Un6VDV-l_Q",
+          "description": "Tutorial: Cara Upload Bundle Apk menggunakan FLutter Ke Play Store - Part 1\nPembuat: Sarerea · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        }
+      ]
+    },
+    {
+      "id": "c-dart-dasar",
+      "title": "Dasar Pemrograman Dart: Tipe Data hingga Async",
+      "description": "Kumpulan tutorial publik dari pembuat yang dicantumkan pada setiap pelajaran. Materi mengikuti video sumber; versi SDK dan tampilan alat dapat berbeda dari versi terbaru.",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=450&fit=crop&q=80",
+      "instructor": "Kurasi tutorial publik",
+      "level": "pemula",
+      "totalLessons": 7,
+      "totalDurationSeconds": 24770,
+      "lessons": [
+        {
+          "id": "l-dd-01",
+          "courseId": "c-dart-dasar",
+          "title": "Variabel dan Tipe Data Dart",
+          "order": 1,
+          "durationSeconds": 1049,
+          "videoUrl": "https://www.youtube.com/watch?v=yaUnl2wPWQw",
+          "description": "Tutorial: Pengenalan Variable dan Tipe Data di Dart\nPembuat: kidimi · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-dd-02",
+          "courseId": "c-dart-dasar",
+          "title": "Percabangan if, else, dan else if",
+          "order": 2,
+          "durationSeconds": 819,
+          "videoUrl": "https://www.youtube.com/watch?v=VwfHx7YW760",
+          "description": "Tutorial: 06 Pemrograman Dart - Percabangan (If Else Elseif)\nPembuat: Padang Tekno · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-dd-03",
+          "courseId": "c-dart-dasar",
+          "title": "Perulangan for dan while pada Dart",
+          "order": 3,
+          "durationSeconds": 731,
+          "videoUrl": "https://www.youtube.com/watch?v=DVoj-yKjm3A",
+          "description": "Tutorial: Dart 02 - Perulangan (For, while, do while) dan Unary Operator ++/— | Visual Code Studio | Mac Os\nPembuat: MECARE Jasa · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-dd-04",
+          "courseId": "c-dart-dasar",
+          "title": "Parameter Fungsi Dart",
+          "order": 4,
+          "durationSeconds": 497,
+          "videoUrl": "https://www.youtube.com/watch?v=zS7M6kwe4C8",
+          "description": "Tutorial: Belajar Dart Bahasa Indonesia | Tutorial Dart | Dart Indonesia - 28 - Function Parameter\nPembuat: Kelas Coding · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-dd-05",
+          "courseId": "c-dart-dasar",
+          "title": "Collection: List, Set, dan Map",
+          "order": 5,
+          "durationSeconds": 2582,
+          "videoUrl": "https://www.youtube.com/watch?v=Q7XhNW3Xd2g",
+          "description": "Tutorial: Belajar Dart untuk Flutter - Part 5: Koleksi List, Set, Map\nPembuat: Dream With Diki · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-dd-06",
+          "courseId": "c-dart-dasar",
+          "title": "Pemrograman Berorientasi Objek Dart",
+          "order": 6,
+          "durationSeconds": 15618,
+          "videoUrl": "https://www.youtube.com/watch?v=k0ycD2aqPzU",
+          "description": "Tutorial: TUTORIAL DART OOP (BAHASA INDONESIA)\nPembuat: Programmer Zaman Now · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-dd-07",
+          "courseId": "c-dart-dasar",
+          "title": "Pemrograman Asinkron Dart",
+          "order": 7,
+          "durationSeconds": 3474,
+          "videoUrl": "https://www.youtube.com/watch?v=qX4JJ9uoiGs",
+          "description": "Tutorial: TUTORIAL DART ASYNC (BAHASA INDONESIA)\nPembuat: Programmer Zaman Now · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        }
+      ]
+    },
+    {
+      "id": "c-uiux-dasar",
+      "title": "Dasar UI/UX Design: Riset, Wireframe, dan Prototipe",
+      "description": "Kumpulan tutorial publik dari pembuat yang dicantumkan pada setiap pelajaran. Materi mengikuti video sumber; versi SDK dan tampilan alat dapat berbeda dari versi terbaru.",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=450&fit=crop&q=80",
+      "instructor": "Kurasi tutorial publik",
+      "level": "menengah",
+      "totalLessons": 6,
+      "totalDurationSeconds": 4334,
+      "lessons": [
+        {
+          "id": "l-ux-01",
+          "courseId": "c-uiux-dasar",
+          "title": "Mengenal UI dan UX Design",
+          "order": 1,
+          "durationSeconds": 418,
+          "videoUrl": "https://www.youtube.com/watch?v=FpP8QBLPeiY",
+          "description": "Tutorial: Apa itu UI dan UX design?\nPembuat: Nodbeen · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ux-02",
+          "courseId": "c-uiux-dasar",
+          "title": "Riset Pengguna dan Pengembangan Persona",
+          "order": 2,
+          "durationSeconds": 924,
+          "videoUrl": "https://www.youtube.com/watch?v=FxdTwQSk2mg",
+          "description": "Tutorial: 02. Riset Pengguna dan Pengembangan Persona\nPembuat: Digital Content Binus · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ux-03",
+          "courseId": "c-uiux-dasar",
+          "title": "Information Architecture dan User Flow",
+          "order": 3,
+          "durationSeconds": 964,
+          "videoUrl": "https://www.youtube.com/watch?v=wNsv7ndXFmw",
+          "description": "Tutorial: UI UX 07 Information Architecture & User Flow\nPembuat: Basuki Heri Winarno · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ux-04",
+          "courseId": "c-uiux-dasar",
+          "title": "Membuat Wireframe di Figma",
+          "order": 4,
+          "durationSeconds": 1010,
+          "videoUrl": "https://www.youtube.com/watch?v=WW2uRdzLumk",
+          "description": "Tutorial: Cara Membuat Wireframe di Figma – Proses Membuat Website Personal (Video Series) Ep 2\nPembuat: UX Orbit Design · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ux-05",
+          "courseId": "c-uiux-dasar",
+          "title": "Memeriksa Kontras Warna di Figma",
+          "order": 5,
+          "durationSeconds": 89,
+          "videoUrl": "https://www.youtube.com/watch?v=5uvU1-2xq3U",
+          "description": "Tutorial: Memeriksa kontras warna untuk aksesibilitas di Figma\nPembuat: Figma · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ux-06",
+          "courseId": "c-uiux-dasar",
+          "title": "Usability Testing dengan Maze",
+          "order": 6,
+          "durationSeconds": 929,
+          "videoUrl": "https://www.youtube.com/watch?v=U0Cokfr8zR4",
+          "description": "Tutorial: Usability Testing Aplikasi Menggunakan Maze Design\nPembuat: ariedezign · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        }
+      ]
+    },
+    {
+      "id": "c-mobile-ui",
+      "title": "Membangun Antarmuka Mobile yang Nyaman Dibaca Pengguna",
+      "description": "Kumpulan tutorial publik dari pembuat yang dicantumkan pada setiap pelajaran. Materi mengikuti video sumber; versi SDK dan tampilan alat dapat berbeda dari versi terbaru.",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=450&fit=crop&q=80",
+      "instructor": "Kurasi tutorial publik",
+      "level": "menengah",
+      "totalLessons": 6,
+      "totalDurationSeconds": 3291,
+      "lessons": [
+        {
+          "id": "l-mu-01",
+          "courseId": "c-mobile-ui",
+          "title": "Memahami Hierarki Visual",
+          "order": 1,
+          "durationSeconds": 347,
+          "videoUrl": "https://www.youtube.com/watch?v=DBHBmeNhYrY",
+          "description": "Tutorial: Apa itu Hirarki Visual?\nPembuat: Envato · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-mu-02",
+          "courseId": "c-mobile-ui",
+          "title": "Mengatasi Text dan Row Overflow",
+          "order": 2,
+          "durationSeconds": 140,
+          "videoUrl": "https://www.youtube.com/watch?v=3VvxU4EL51M",
+          "description": "Tutorial: Tutorial Flutter - Cara Mengatasi Text Overflow & Row Overflow\nPembuat: HeyFlutter․com · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-mu-03",
+          "courseId": "c-mobile-ui",
+          "title": "Membangun Grid System di Flutter",
+          "order": 3,
+          "durationSeconds": 1419,
+          "videoUrl": "https://www.youtube.com/watch?v=y5TU46HQNik",
+          "description": "Tutorial: Flutter Indonesia - Bikin Grid System Mirip CSS di Flutter! (Tanpa Library) 🚀\nPembuat: Dannndi Dev. · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-mu-04",
+          "courseId": "c-mobile-ui",
+          "title": "Skeleton Loading di Flutter",
+          "order": 4,
+          "durationSeconds": 487,
+          "videoUrl": "https://www.youtube.com/watch?v=D1XCnvOM3oo",
+          "description": "Tutorial: Flutter Shimmer / Skeleton Loading\nPembuat: devindo · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-mu-05",
+          "courseId": "c-mobile-ui",
+          "title": "Aksesibilitas dengan Semantics",
+          "order": 5,
+          "durationSeconds": 79,
+          "videoUrl": "https://www.youtube.com/watch?v=NvtMt_DtFrQ",
+          "description": "Tutorial: Semantics (Widget Flutter Minggu Ini)\nPembuat: Flutter · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-mu-06",
+          "courseId": "c-mobile-ui",
+          "title": "Membuat Dark Theme di Flutter",
+          "order": 6,
+          "durationSeconds": 819,
+          "videoUrl": "https://www.youtube.com/watch?v=b__cQY5x0h0",
+          "description": "Tutorial: Cara Membuat Dark Theme di Aplikasi Flutter\nPembuat: kue_keju · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        }
+      ]
+    },
+    {
+      "id": "c-clean-arch",
+      "title": "Arsitektur Bersih untuk Aplikasi Flutter Skala Besar",
+      "description": "Kumpulan tutorial publik dari pembuat yang dicantumkan pada setiap pelajaran. Materi mengikuti video sumber; versi SDK dan tampilan alat dapat berbeda dari versi terbaru.",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=450&fit=crop&q=80",
+      "instructor": "Kurasi tutorial publik",
+      "level": "lanjut",
+      "totalLessons": 7,
+      "totalDurationSeconds": 7379,
+      "lessons": [
+        {
+          "id": "l-ca-01",
+          "courseId": "c-clean-arch",
+          "title": "Struktur Folder Flutter yang Scalable",
+          "order": 1,
+          "durationSeconds": 464,
+          "videoUrl": "https://www.youtube.com/watch?v=3I0_qJjt_z0",
+          "description": "Tutorial: Struktur Folder Flutter yang Benar (Scalable & Clean)\nPembuat: Code With Jojoo · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ca-02",
+          "courseId": "c-clean-arch",
+          "title": "Pengantar Clean Architecture Flutter",
+          "order": 2,
+          "durationSeconds": 1296,
+          "videoUrl": "https://www.youtube.com/watch?v=iGbTlNtdFbc",
+          "description": "Tutorial: FLUTTER CLEAN ARCHITECTURE [ NEW 2024 - BAHASA INDONESIA ] - 01 Introduction\nPembuat: Kuldii Project · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ca-03",
+          "courseId": "c-clean-arch",
+          "title": "Dependency Injection dan Repository dengan Riverpod",
+          "order": 3,
+          "durationSeconds": 227,
+          "videoUrl": "https://www.youtube.com/watch?v=kHtjZ-dcUus",
+          "description": "Tutorial: Injeksi Ketergantungan Flutter Riverpod | Riverpod Firebase, Repositori, dan Pengontrol\nPembuat: dbestech · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ca-04",
+          "courseId": "c-clean-arch",
+          "title": "Penanganan Error dengan Dartz Either",
+          "order": 4,
+          "durationSeconds": 857,
+          "videoUrl": "https://www.youtube.com/watch?v=6ogBTHZ3Vag",
+          "description": "Tutorial: Dartz Either Mempermudah Handling Exception atau Error di Flutter\nPembuat: Heyrozx · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ca-05",
+          "courseId": "c-clean-arch",
+          "title": "Caching Data dengan Pendekatan Offline-First",
+          "order": 5,
+          "durationSeconds": 645,
+          "videoUrl": "https://www.youtube.com/watch?v=fwrHw4PROnY",
+          "description": "Tutorial: Menerapkan Pendekatan Offline-First di Flutter: Tutorial Caching Data\nPembuat: JeronDev · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ca-06",
+          "courseId": "c-clean-arch",
+          "title": "Unit, Widget, dan Integration Test",
+          "order": 6,
+          "durationSeconds": 3503,
+          "videoUrl": "https://www.youtube.com/watch?v=P6XdW3WV-ak",
+          "description": "Tutorial: Unit Test, Widget Test dan Integration Test di Flutter\nPembuat: Deep WhyEver · Bahasa: Indonesia.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        },
+        {
+          "id": "l-ca-07",
+          "courseId": "c-clean-arch",
+          "title": "Analisis Kode dengan Dart Analyze dan Dart Fix",
+          "order": 7,
+          "durationSeconds": 387,
+          "videoUrl": "https://www.youtube.com/watch?v=OBIuSrg_Quo",
+          "description": "Tutorial: Using Dart analyze & Dart fix | Decoding Flutter\nPembuat: Flutter · Bahasa: Inggris.\nVideo diputar dari kanal sumber melalui YouTube. Ketersediaan subtitle dan izin embed mengikuti pembuat video."
+        }
+      ]
+    }
+  ]
+}
