@@ -30,6 +30,13 @@ class FakeVideoPlayerPlatform extends VideoPlayerPlatform {
   /// how a broken/undeliverable stream reaches the error state.
   String? failWith;
 
+  /// Simulates a stream that breaks after playback has started.
+  void emitConnectionLost(int playerId) {
+    _events[playerId]!.addError(
+      PlatformException(code: 'VideoError', message: 'Connection lost'),
+    );
+  }
+
   @override
   Future<void> init() async {}
 

@@ -154,6 +154,23 @@ void main() {
       // A RenderFlex overflow would be reported and fail the test.
       expect(tester.takeException(), isNull);
     });
+
+    testWidgets('landscape at 1.3x text scale does not overflow', (
+      tester,
+    ) async {
+      _setSize(tester, 640, 360);
+      tester.platformDispatcher.textScaleFactorTestValue = 1.3;
+      addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
+
+      final repo = FakeCourseRepository(
+        detailFuture: Future.value(sampleDetail()),
+      );
+      await tester.pumpWidget(_host(_page('l-1'), repo));
+      await tester.pumpAndSettle();
+
+      expect(find.byKey(const Key('fake-video-surface')), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    });
   });
 
   group('LessonPlayerPage video states', () {
@@ -194,6 +211,29 @@ void main() {
       expect(fake.created.length, 2);
       await _flushDisposal(tester);
       // The broken controller was released, not left running.
+      expect(fake.disposed, [0]);
+    });
+
+    testWidgets('connection lost during playback shows a recoverable error', (
+      tester,
+    ) async {
+      _setSize(tester, 360, 640);
+      final repo = FakeCourseRepository(
+        detailFuture: Future.value(sampleDetail()),
+      );
+      await tester.pumpWidget(_host(_page('l-1'), repo));
+      await tester.pumpAndSettle();
+
+      fake.emitConnectionLost(0);
+      await tester.pumpAndSettle();
+
+      expect(find.textContaining('Video terhenti'), findsOneWidget);
+      expect(find.text('Coba lagi'), findsOneWidget);
+
+      await tester.tap(find.text('Coba lagi'));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('fake-video-surface')), findsOneWidget);
+      await _flushDisposal(tester);
       expect(fake.disposed, [0]);
     });
   });
