@@ -48,7 +48,7 @@ flutter analyze
 flutter test
 ```
 
-Jumlah tes: 36 (unit + widget). Jika `google_fonts` mencoba mengunduh font saat tes, tes sudah menonaktifkan runtime fetching.
+Jumlah tes: 37 (unit + widget). Jika `google_fonts` mencoba mengunduh font saat tes, tes sudah menonaktifkan runtime fetching.
 
 ## Struktur
 

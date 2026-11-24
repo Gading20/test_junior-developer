@@ -76,6 +76,14 @@ Alasan: perilaku kritis (Parsing, Failure, lifecycle, overflow, tap ganda) dapat
 
 Ditolak: golden test. Akan rapuh terhadap perubahan font dan versi Flutter.
 
+## Tombol keluar layar penuh
+
+Pilihan: menyisipkan strip 56 dp di atas video pada layout fullscreen, lalu `PopScope` untuk tombol back perangkat.
+
+Alasan: WebView YouTube adalah platform view native dan dapat melukis di atas widget Flutter. Tombol yang ditempatkan di atas video tidak terlihat dan tidak bisa ditekan di HP. Strip di luar area WebView membuat tombol tetap terlihat; back button memberi jalan keluar kedua.
+
+Ditolak: overlay `Stack` di atas video (tertutup WebView), mengandalkan tombol fullscreen YouTube saja (tidak keluar dari mode fullscreen aplikasi).
+
 ## Perbaikan bug perpindahan pelajaran
 
 Masalah: router dapat memakai ulang `State` untuk rute dengan pola sama. `VideoArea` menerima lesson baru lewat `didUpdateWidget`, tetapi controller lama tetap hidup.

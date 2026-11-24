@@ -13,7 +13,7 @@
 - MP4 memakai kontrol khusus aplikasi; YouTube memakai kontrol IFrame resmi. Keduanya tidak identik. Tidak ada kontrol seragam lintas platform.
 - Tidak ada autoplay. Setelah aplikasi kembali dari latar belakang, pengguna menekan play sendiri.
 - Tidak ada progress tontonan, bookmark, resume posisi, subtitle kustom, rating, atau kecepatan putar untuk YouTube.
-- Layar penuh YouTube memakai kontrol YouTube. Tombol keluar layar penuh ditambahkan di pojok kiri atas.
+- Layar penuh YouTube memakai kontrol YouTube. Tombol keluar layar penuh berada pada strip 56 dp di atas video karena WebView native dapat menutupi overlay Flutter; area video dengan demikian tidak benar-benar penuh sampai ke tepi atas. Tombol back perangkat juga keluar dari layar penuh.
 - Pengujian otomatis memakai `FakeVideoPlayerPlatform`; pemutaran nyata diverifikasi manual di perangkat.
 
 ## Data dan jaringan
@@ -30,7 +30,7 @@
 
 ## Pengujian dan perangkat
 
-- 36 tes otomatis berjalan di host Linux. Tidak ada integration test yang menjalankan YouTube di emulator.
+- 37 tes otomatis berjalan di host Linux. Tidak ada integration test yang menjalankan YouTube di emulator.
 - Verifikasi visual di Samsung SM A155F dilakukan manual dengan build debug. Screenshot membuktikan tampilan, bukan seluruh interaksi video.
 - Emulator tidak tersedia; tablet dan rotasi diuji lewat ukuran widget test, bukan perangkat fisik.
 - `flutter analyze` bersih pada commit terakhir. Tidak ada CI yang menjalankannya otomatis.

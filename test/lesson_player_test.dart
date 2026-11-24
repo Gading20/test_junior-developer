@@ -461,5 +461,34 @@ void main() {
         isTrue,
       );
     });
+
+    testWidgets('dedicated exit control leaves fullscreen', (tester) async {
+      _setSize(tester, 360, 640);
+      tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(
+        SystemChannels.platform,
+        (call) async => null,
+      );
+      addTearDown(
+        () => tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(
+          SystemChannels.platform,
+          null,
+        ),
+      );
+      final repo = FakeCourseRepository(
+        detailFuture: Future.value(sampleDetail()),
+      );
+      await tester.pumpWidget(_host(_page('l-1'), repo));
+      await tester.pumpAndSettle();
+
+      await tester.tap(find.byTooltip('Layar penuh'));
+      await tester.pumpAndSettle();
+      expect(find.byType(AppBar), findsNothing);
+      expect(find.byTooltip('Keluar layar penuh'), findsOneWidget);
+
+      await tester.tap(find.byTooltip('Keluar layar penuh'));
+      await tester.pumpAndSettle();
+      expect(find.byType(AppBar), findsOneWidget);
+      expect(find.byTooltip('Keluar layar penuh'), findsNothing);
+    });
   });
 }

@@ -122,24 +122,31 @@ class _LessonPlayerPageState extends ConsumerState<LessonPlayerPage> {
   Widget build(BuildContext context) {
     final detailAsync = ref.watch(courseDetailProvider(widget.courseId));
 
-    return Scaffold(
-      appBar: _isFullscreen ? null : AppBar(title: _title(detailAsync)),
-      body: detailAsync.when(
-        // The skeleton is already a ListView: wrapping it in another
-        // one nests two viewports and crashes layout.
-        loading: () => const LessonPlayerSkeleton(),
-        error: (error, _) => ListView(
-          physics: const AlwaysScrollableScrollPhysics(),
-          children: [
-            StateView.failure(
-              _asFailure(error),
-              onRetry: () =>
-                  ref.invalidate(courseDetailProvider(widget.courseId)),
-            ),
-          ],
+    return PopScope<Object?>(
+      // Hardware back leaves fullscreen first, instead of leaving the lesson.
+      canPop: !_isFullscreen,
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop) unawaited(_setFullscreen(false));
+      },
+      child: Scaffold(
+        appBar: _isFullscreen ? null : AppBar(title: _title(detailAsync)),
+        body: detailAsync.when(
+          // The skeleton is already a ListView: wrapping it in another
+          // one nests two viewports and crashes layout.
+          loading: () => const LessonPlayerSkeleton(),
+          error: (error, _) => ListView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            children: [
+              StateView.failure(
+                _asFailure(error),
+                onRetry: () =>
+                    ref.invalidate(courseDetailProvider(widget.courseId)),
+              ),
+            ],
+          ),
+          data: (detail) =>
+              _isFullscreen ? _videoOnly(detail) : _scrollable(context, detail),
         ),
-        data: (detail) =>
-            _isFullscreen ? _videoOnly(detail) : _scrollable(context, detail),
       ),
     );
   }
@@ -159,25 +166,31 @@ class _LessonPlayerPageState extends ConsumerState<LessonPlayerPage> {
   Widget _videoOnly(CourseDetail detail) {
     final lesson = detail.lessonById(widget.lessonId);
     if (lesson == null) return _notFound();
-    return Stack(
+    // The YouTube WebView is a native platform view and can paint over
+    // Flutter overlays. Reserve a strip outside it so the exit control
+    // stays visible and tappable.
+    return Column(
       children: [
-        Positioned.fill(
+        SizedBox(
+          height: 56,
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: AppSpacing.sm),
+              child: IconButton.filled(
+                tooltip: 'Keluar layar penuh',
+                onPressed: () => unawaited(_setFullscreen(false)),
+                icon: const Icon(LucideIcons.minimize),
+              ),
+            ),
+          ),
+        ),
+        Expanded(
           child: _stage(
             lesson,
             lessons: detail.lessons,
             isFullscreen: true,
             onBack: () => unawaited(_setFullscreen(false)),
-          ),
-        ),
-        Positioned(
-          top: 0,
-          left: 0,
-          child: SafeArea(
-            child: IconButton.filled(
-              tooltip: 'Keluar layar penuh',
-              onPressed: () => unawaited(_setFullscreen(false)),
-              icon: const Icon(LucideIcons.minimize),
-            ),
           ),
         ),
       ],
